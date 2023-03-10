@@ -7,11 +7,11 @@
 
 using namespace std;
 
-const int NUMERO_ALUMNOSInge = 5;
-const int NUMERO_MATERIASInge =4;
-const int MAX_CALIFICACIONInge = 50;
-const int MIN_CALIFICACIONInge = 0;
-const int MAXIMA_LONGITUD_CADENAInge = 50;
+const int NUMERO_EquiposNa = 5;
+const int NUMERO_LigasNa =4;
+const int MAX_CALIFICACIONNa = 50;
+const int MIN_CALIFICACIONNa = 0;
+const int MAXIMA_LONGITUD_CADENANa = 50;
 
 const int NUMERO_ALUMNOS = 5;
 const int NUMERO_MATERIAS =4;
@@ -37,10 +37,10 @@ void imprimirMatriz(float matriz[NUMERO_ALUMNOS][NUMERO_MATERIAS + 1], char alum
 
 int opc;
 char inicio;
-int busquedaAleatoriosInge(int minimoInge, int maximoInge);
-void llenarMatrizInge(float matrizInge[NUMERO_ALUMNOSInge][NUMERO_MATERIASInge + 1]);
+int busquedaAleatoriosNa(int minimoNa, int maximoNa);
+void llenarMatrizNa(float matrizNa[NUMERO_EquiposNa][NUMERO_LigasNa + 1]);
 void imprimirMatrizLinea();
-void imprimirMatrizInge(float matrizInge[NUMERO_ALUMNOSInge][NUMERO_MATERIASInge + 1], char alumnosInge[NUMERO_ALUMNOSInge][MAXIMA_LONGITUD_CADENAInge]);
+void imprimirMatrizNa(float matrizNa[NUMERO_EquiposNa][NUMERO_LigasNa + 1], char EquiposNa[NUMERO_EquiposNa][MAXIMA_LONGITUD_CADENANa]);
 
 int main()
 {
@@ -60,10 +60,10 @@ int main()
     if(opc==1)
     {
     srand(getpid());
-    float matrizInge[NUMERO_ALUMNOSInge][NUMERO_MATERIASInge + 1];
-    char alumnosInge[NUMERO_ALUMNOSInge][MAXIMA_LONGITUD_CADENAInge] = {"GUASTATOYA    ","MUNICIPAL     ", "COMUNICACIONES", "AURORA        ", "MALACATECO    "};
-    llenarMatrizInge(matrizInge);
-    imprimirMatrizInge(matrizInge, alumnosInge);
+    float matrizNa[NUMERO_EquiposNa][NUMERO_LigasNa + 1];
+    char equipoNa[NUMERO_EquiposNa][MAXIMA_LONGITUD_CADENANa] = {"GUASTATOYA    ","MUNICIPAL     ", "COMUNICACIONES", "AURORA        ", "MALACATECO    "};
+    llenarMatrizNa(matrizNa);
+    imprimirMatrizNa(matrizNa, equipoNa);
     }
 
     if(opc==2)
@@ -88,86 +88,86 @@ int main()
 	} while ((inicio=='S')||(inicio=='s'));
 		cout<<"\n\t QUE TENGA UN EXCELENTE DIA!!"<<endl;
 }
-int busquedaAleatoriosInge(int minimoInge, int maximoInge)
+int busquedaAleatoriosNa(int minimoNa, int maximoNa)
 {
-    return minimoInge + rand() / (RAND_MAX / (maximoInge - minimoInge + 1) + 1);
+    return minimoNa + rand() / (RAND_MAX / (maximoNa - minimoNa + 1) + 1);
 }
 
-void llenarMatrizInge(float matrizInge[NUMERO_ALUMNOSInge][NUMERO_MATERIASInge + 1])
+void llenarMatrizNa(float matrizNa[NUMERO_EquiposNa][NUMERO_LigasNa + 1])
 {
     int y, x;
-    for (y = 0; y < NUMERO_ALUMNOSInge; y++)
+    for (y = 0; y < NUMERO_EquiposNa; y++)
     {
         float suma = 0;
-        for (x = 0; x < NUMERO_MATERIASInge; x++)
+        for (x = 0; x < NUMERO_LigasNa; x++)
         {
-            int calificacionInge = busquedaAleatoriosInge(MIN_CALIFICACIONInge, MAX_CALIFICACIONInge);
-            suma += (float)calificacionInge;
-            matrizInge[y][x] = calificacionInge;
+            int calificacionNa = busquedaAleatoriosNa(MIN_CALIFICACIONNa, MAX_CALIFICACIONNa);
+            suma += (float)calificacionNa;
+            matrizNa[y][x] = calificacionNa;
         }
         // Agregar promedio
-        float promedioIng = suma / NUMERO_MATERIASInge;
-        matrizInge[y][NUMERO_MATERIASInge] = promedioIng;
+        float promedioNa = suma / NUMERO_LigasNa;
+        matrizNa[y][NUMERO_LigasNa] = promedioNa;
     }
 }
 
-void imprimirMatrizLineaInge()
+void imprimirMatrizLineaNa()
 {
     int x;
     cout << "+--------";
-    for (x = 0; x < NUMERO_MATERIASInge + 1; x++)
+    for (x = 0; x < NUMERO_LigasNa + 1; x++)
     {
         cout << "+---------";
     }
     cout << "+\n";
 }
 
-void imprimirMatrizInge(float matrizInge[NUMERO_ALUMNOSInge][NUMERO_MATERIASInge + 1], char alumnosInge[NUMERO_ALUMNOSInge][MAXIMA_LONGITUD_CADENAInge])
+void imprimirMatrizNa(float matrizNa[NUMERO_EquiposNa][NUMERO_LigasNa + 1], char equiposNa[NUMERO_EquiposNa][MAXIMA_LONGITUD_CADENANa])
 {
     int y, x;
-    float promedioMayorInge = matrizInge[0][NUMERO_MATERIASInge];
-    float promedioMenorInge = matrizInge[0][NUMERO_MATERIASInge];
-    char alumnoPromedioMayorInge[MAXIMA_LONGITUD_CADENAInge];
-    char alumnoPromedioMenorInge[MAXIMA_LONGITUD_CADENAInge];
-    memcpy(alumnoPromedioMayorInge, alumnosInge[0], MAXIMA_LONGITUD_CADENAInge);
-    memcpy(alumnoPromedioMenorInge, alumnosInge[0], MAXIMA_LONGITUD_CADENAInge);
+    float promedioMayorNa = matrizNa[0][NUMERO_LigasNa];
+    float promedioMenorNa = matrizNa[0][NUMERO_LigasNa];
+    char equipoPromedioMayorNa[MAXIMA_LONGITUD_CADENANa];
+    char equipoPromedioMenorNa[MAXIMA_LONGITUD_CADENANa];
+    memcpy(equipoPromedioMayorNa, equiposNa[0], MAXIMA_LONGITUD_CADENANa);
+    memcpy(equipoPromedioMenorNa, equiposNa[0], MAXIMA_LONGITUD_CADENANa);
 
-    imprimirMatrizLineaInge();
+    imprimirMatrizLineaNa();
     cout << setw(9) << "    EQUIPO";
-    for (x = 0; x < NUMERO_MATERIASInge-1; x++)
+    for (x = 0; x < NUMERO_LigasNa-1; x++)
     {
         cout << setw(9) << "         201" << x + 1;
     }
     cout << setw(8) << "    2014"  ;
 
     cout << setw(8) << "    Prom" << endl;
-    imprimirMatrizLineaInge();
+    imprimirMatrizLineaNa();
 
-    for (y = 0; y < NUMERO_ALUMNOSInge; y++)
+    for (y = 0; y < NUMERO_EquiposNa; y++)
     {
-        cout << "|" << setw(8) << alumnosInge[y] << "|";
+        cout << "|" << setw(8) << equiposNa[y] << "|";
         float suma = 0;
-        for (x = 0; x < NUMERO_MATERIASInge; x++)
+        for (x = 0; x < NUMERO_LigasNa; x++)
         {
-            int calificacionInge = matrizInge[y][x];
-            cout << setw(9) << calificacionInge << "|";
+            int calificacionNa = matrizNa[y][x];
+            cout << setw(9) << calificacionNa << "|";
         }
-        float promedioInge = matrizInge[y][NUMERO_MATERIASInge];
-        if (promedioInge > promedioMayorInge)
+        float promedioNa = matrizNa[y][NUMERO_LigasNa];
+        if (promedioNa > promedioMayorNa)
         {
-            promedioMayorInge = promedioInge;
-            memcpy(alumnoPromedioMayorInge, alumnosInge[y], MAXIMA_LONGITUD_CADENAInge);
+            promedioMayorNa = promedioNa;
+            memcpy(equipoPromedioMayorNa, equiposNa[y], MAXIMA_LONGITUD_CADENANa);
         }
-        if (promedioInge < promedioMenorInge)
+        if (promedioNa < promedioMenorNa)
         {
-            promedioMenorInge = promedioInge;
-            memcpy(alumnoPromedioMenorInge, alumnosInge[y], MAXIMA_LONGITUD_CADENAInge);
+            promedioMenorNa = promedioNa;
+            memcpy(equipoPromedioMenorNa, equiposNa[y], MAXIMA_LONGITUD_CADENANa);
         }
-        cout << setw(9) << fixed << setprecision(2) << promedioInge << "|" << endl;
-        imprimirMatrizLineaInge();
+        cout << setw(9) << fixed << setprecision(2) << promedioNa << "|" << endl;
+        imprimirMatrizLineaNa();
     }
-    cout << "CAMPEON DE LA LIGA: " << setw(10) << alumnoPromedioMayorInge << " PROMEDIO: " << setw(10) << promedioMayorInge << endl;
-    cout << "ULTIMO EN LA TABLA: "<< setw(10) << alumnoPromedioMenorInge << " PROMEDIO: " << setw(10) << promedioMenorInge << endl;
+    cout << "CAMPEON DE LA LIGA: " << setw(10) << equipoPromedioMayorNa << " PROMEDIO: " << setw(10) << promedioMayorNa << endl;
+    cout << "ULTIMO EN LA TABLA: "<< setw(10) << equipoPromedioMenorNa<< " PROMEDIO: " << setw(10) << promedioMenorNa << endl;
 }
 
 

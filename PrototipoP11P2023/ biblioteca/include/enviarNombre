@@ -1,0 +1,16 @@
+#ifndef ENVIARNOMBRE_
+#define ENVIARNOMBRE_
+
+
+class enviarNombre
+{
+    public:
+        enviarNombre();
+        virtual ~enviarNombre();
+
+    protected:
+
+    private:
+};
+
+#endif // ENVIARNOMBRE_

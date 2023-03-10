@@ -1,0 +1,11 @@
+#include "enviarNombre."
+
+enviarNombre::enviarNombre()
+{
+    //ctor
+}
+
+enviarNombre::~enviarNombre()
+{
+    //dtor
+}
