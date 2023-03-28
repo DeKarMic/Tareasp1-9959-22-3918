@@ -1,0 +1,11 @@
+#include "e."
+
+e::e()
+{
+    //ctor
+}
+
+e::~e()
+{
+    //dtor
+}

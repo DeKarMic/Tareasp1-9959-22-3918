@@ -1,0 +1,11 @@
+#include "planilla."
+
+planilla::planilla()
+{
+    //ctor
+}
+
+planilla::~planilla()
+{
+    //dtor
+}

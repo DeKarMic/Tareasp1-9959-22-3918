@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\prototipop11p2023\buscaminas\main.cpp
+	<iostream>
+
+1679068897 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\prototipop11p2023\buscaminas\src\juego.cpp
+	"Juego.h"
+
+1679068897 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\prototipop11p2023\buscaminas\include\juego.h
+
+1679068885 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\prototipop11p2023\buscaminas\src\tablero.cpp
+	"tablero.h"
+
+1679068885 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\prototipop11p2023\buscaminas\include\tablero.h
+

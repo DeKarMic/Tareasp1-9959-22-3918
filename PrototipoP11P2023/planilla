@@ -1,0 +1,23 @@
+#include "planilla."
+
+planilla::planilla()
+{
+    //ctor
+}
+
+planilla::~planilla()
+{
+    //dtor
+}
+
+planilla::planilla(const planilla& other)
+{
+    //copy ctor
+}
+
+planilla& planilla::operator=(const planilla& rhs)
+{
+    if (this == &rhs) return *this; // handle self assignment
+    //assignment operator
+    return *this;
+}
