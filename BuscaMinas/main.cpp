@@ -7,26 +7,27 @@ using namespace std;
 
 int main()
 {
-    const int FILASTABLERO =5;
+    const int FILASTABLERO = 5;
     const int COLUMNASTABLERO = 5;
     const int MINASENTABLERO = 3;
-    const int MODODESARROLLADOR =true;
+    const bool MODODESARROLLADOR = true;
     const int VIDASTABLERO = 3;
     Config configuracionJuego(FILASTABLERO, COLUMNASTABLERO, MINASENTABLERO, MODODESARROLLADOR, VIDASTABLERO);
-
+    Juego juego(Tablero(configuracionJuego.getfilasTablero(), configuracionJuego.getcolumnasTablero(), configuracionJuego.getmodoDesarrolladorTablero()), configuracionJuego.getminasTablero());
+    juego.dibujarPortada("portada.txt");
     srand(getpid());
-	int opciones;
-	bool repetir = true;
-	do
+    int opciones;
+    bool repetir = true;
+    do
     {
         system("cls");
-        cout<<"\n\n\t\tBUSCA MINAS - Menu-" <<endl;
-        cout<<"\t\t-----------------------"<<endl;
-        cout<<"\t\t1. Configuracion del juego"<<endl;
-        cout<<"\t\t2. Iniciar el juego"<<endl;
-        cout<<"\t\t3. Salir del juego"<<endl;
-        cout<<"\n\t\tIngrese una opcion: ";
-        cin>>opciones;
+        cout << "\n\n\t\tBUSCA MINAS -Menu-" << endl;
+        cout << "\t\t-------------------"<< endl;
+        cout << "\t\t1. Configuaracion del Juego" << endl;
+        cout << "\t\t2. Iniciar el Juego" << endl;
+        cout << "\t\t3. Salir del Juego" << endl;
+        cout << "\n\t\tIngrese una opcion: ";
+        cin >> opciones;
         switch (opciones)
         {
         case 1:
@@ -36,18 +37,17 @@ int main()
             }
         case 2:
             {
-                Juego Juego(Tablero(), )
-                Juego.iniciar
+              	Juego juegoTemporal(Tablero(configuracionJuego.getfilasTablero(), configuracionJuego.getcolumnasTablero(), configuracionJuego.getmodoDesarrolladorTablero()), configuracionJuego.getminasTablero());
+                juegoTemporal.iniciar();
+
+                system("pause");
+                break;
             }
+        case 3: repetir = false;
+                break;
         }
-    }
-
-	int filasTablero = 9;
-	int columnasTablero = 9;
-	int minasEnTablero = 5;
-	bool modoDesarrollador = true;
-
-	Juego juego(Tablero(filasTablero, columnasTablero, modoDesarrollador), minasEnTablero);
-	juego.iniciar();
+    } while (repetir);
+    system("cls");
+    juego.dibujarPortada("creditos.txt");
     return 0;
 }

@@ -1,13 +1,15 @@
 # depslib dependency file v1.0
-1679292554 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\main.cpp
+1680274918 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\main.cpp
 	<iostream>
 	<unistd.h>
 	"Juego.h"
+	"Config.h"
 
-1679290166 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\juego.cpp
+1680274797 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\juego.cpp
 	"Juego.h"
+	<fstream>
 
-1679290952 c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\juego.h
+1680274797 c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\juego.h
 	"Tablero.h"
 
 1679292869 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\tablero.cpp
@@ -15,7 +17,7 @@
 	<sstream>
 	<iostream>
 
-1679291105 c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\tablero.h
+1679325748 c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\tablero.h
 	<iostream>
 	<vector>
 	"Celda.h"
@@ -49,6 +51,50 @@
 	"Juego.h"
 
 1679292869 source:c:\users\visitante\proyectos\didactica2k23\temporal\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\tablero.cpp
+	"Tablero.h"
+	<sstream>
+	<iostream>
+
+1680103073 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\config.cpp
+	<iostream>
+	<unistd.h>
+	"Config.h"
+
+1680103073 c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\config.h
+
+1680276312 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\main.cpp
+	<iostream>
+	<unistd.h>
+	"Juego.h"
+	"Config.h"
+
+1680276312 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\include\juego.h
+	"Tablero.h"
+
+1680276312 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\include\tablero.h
+	<iostream>
+	<vector>
+	"Celda.h"
+
+1680276312 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\include\celda.h
+
+1680418055 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\include\config.h
+
+1680276312 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\src\celda.cpp
+	"Celda.h"
+	<iostream>
+
+1680418063 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\src\config.cpp
+	<iostream>
+	<unistd.h>
+	"Config.h"
+
+1680276312 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\src\juego.cpp
+	"Juego.h"
+	<fstream>
+	<unistd.h>
+
+1680276312 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\buscaminas\src\tablero.cpp
 	"Tablero.h"
 	<sstream>
 	<iostream>

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1681274588 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\planilla\nomina\main.cpp
+	<iostream>
+	"Login.h"
+	"menuprincipal.h"
+
+1681274712 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\planilla\nomina\src\login.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	<conio.h>
+	<vector>
+
+1681274664 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\planilla\nomina\include\login.h
+
+1681273620 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\planilla\nomina\src\menu principal.cpp
+
+1681274989 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\planilla\nomina\src\menuprincipal.cpp
+	<iostream>
+	<cstdlib>
+
+1681274837 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\planilla\nomina\include\menuprincipal.h
+
