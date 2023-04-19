@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1681925608 source:c:\users\dekar\onedrive\escritorio\prototipo2pp12023\main.cpp
+	<iostream>
+	<unistd.h>
+	"Login.h"
+	"Catalogo.h"
+	"reportes.h"
+
+1681925725 source:c:\users\dekar\onedrive\escritorio\prototipo2pp12023\src\login.cpp
+	"Login.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1681922121 c:\users\dekar\onedrive\escritorio\prototipo2pp12023\include\login.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+
+1681926125 source:c:\users\dekar\onedrive\escritorio\prototipo2pp12023\src\catalogo.cpp
+	"Catalogo.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1681925527 c:\users\dekar\onedrive\escritorio\prototipo2pp12023\include\catalogo.h
+
+1681925527 c:\users\dekar\onedrive\escritorio\prototipo2pp12023\include\reportes.h
+
+1681925725 source:c:\users\dekar\onedrive\escritorio\prototipo2pp12023\src\reportes.cpp
+	"reportes.h"
+	"Catalogo.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
