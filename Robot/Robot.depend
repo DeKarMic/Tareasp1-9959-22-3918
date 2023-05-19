@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1683734588 source:c:\users\dekar\onedrive\escritorio\robot\main.cpp
+	<iostream>
+
+1684508588 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\main.cpp
+	<iostream>
+	"jugador.h"
+
+1684508143 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\include\jugador.h
+
+1684509049 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\src\jugador.cpp
+	<iostream>
+	"jugador.h"
+
