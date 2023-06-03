@@ -40,3 +40,11 @@ void jugador::manejoControles()
         }
     cout <<"El jugador esta en las cordenadas -->" <<"x = "<< x << "y = "<< y << endl;
 }
+int jugador::getX()
+{
+    return x;
+}
+int jugador::getY()
+{
+    return y;
+}

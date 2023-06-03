@@ -2,13 +2,28 @@
 1683734588 source:c:\users\dekar\onedrive\escritorio\robot\main.cpp
 	<iostream>
 
-1684508588 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\main.cpp
+1684512970 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\main.cpp
+	<iostream>
+	"jugador.h"
+	"celdamapa.h"
+	"mapa.h"
+
+1684512689 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\include\jugador.h
+
+1684512689 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\src\jugador.cpp
 	<iostream>
 	"jugador.h"
 
-1684508143 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\include\jugador.h
-
-1684509049 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\src\jugador.cpp
+1684511530 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\src\celdamapa.cpp
+	"celdamapa.h"
 	<iostream>
-	"jugador.h"
+
+1684511530 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\include\celdamapa.h
+
+1684512150 source:c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\src\mapa.cpp
+	"mapa.h"
+	<iostream>
+
+1684513367 c:\users\dekar\onedrive\escritorio\universidad\progra\tareasp1-9959-22-3918\robot\include\mapa.h
+	"celdamapa.h"
 
