@@ -1,0 +1,96 @@
+# depslib dependency file v1.0
+1684129476 source:c:\users\dekar\onedrive\escritorio\projecto nomina\src\usuario.cpp
+	"Usuario.h"
+	"menus.h"
+	"menucatalogos.h"
+	"menuempleados.h"
+	"menusalarios.h"
+	"menunominas.h"
+	"menuprocesos.h"
+
+1683603706 c:\users\dekar\onedrive\escritorio\projecto nomina\include\usuario.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<string>
+
+1684129476 source:c:\users\dekar\onedrive\escritorio\projecto nomina\main.cpp
+	<iostream>
+	<usuario.h>
+	"menus.h"
+	"menucatalogos.h"
+	"menuempleados.h"
+	"menusalarios.h"
+	"menunominas.h"
+	"menuprocesos.h"
+
+1684121606 source:c:\users\dekar\onedrive\escritorio\projecto nomina\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1684129045 source:c:\users\dekar\onedrive\escritorio\projecto nomina\src\menucatalogos.cpp
+	"menucatalogos.h"
+	<iostream>
+	"menuempleados.h"
+
+1684122455 source:c:\users\dekar\onedrive\escritorio\projecto nomina\src\menuempleados.cpp
+	<iostream>
+	"menuempleados.h"
+
+1684122483 source:c:\users\dekar\onedrive\escritorio\projecto nomina\src\menusalarios.cpp
+	<iostream>
+	"menusalarios.h"
+
+1684121606 c:\users\dekar\onedrive\escritorio\projecto nomina\include\menus.h
+
+1684122074 c:\users\dekar\onedrive\escritorio\projecto nomina\include\menucatalogos.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"usuario.h"
+
+1684122318 c:\users\dekar\onedrive\escritorio\projecto nomina\include\menuempleados.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"usuario.h"
+
+1684122318 c:\users\dekar\onedrive\escritorio\projecto nomina\include\menusalarios.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menusalarios.h"
+
+1684129205 source:c:\users\dekar\onedrive\escritorio\projecto nomina\src\menunominas.cpp
+	<iostream>
+	"menunominas.h"
+	"menuempleados.h"
+	"menusalarios.h"
+
+1684122318 c:\users\dekar\onedrive\escritorio\projecto nomina\include\menunominas.h
+	"menunominas.h"
+
+1684122318 c:\users\dekar\onedrive\escritorio\projecto nomina\include\menuprocesos.h
+	"menuprocesos.h"
+
+1684122603 source:c:\users\dekar\onedrive\escritorio\projecto nomina\src\menuprocesos.cpp
+	<iostream>
+	"menuprocesos.h"
+
